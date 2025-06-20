@@ -5,7 +5,7 @@
       <input type="hidden" name="note" id="note">
     </form>
     <script>
-      fetch('/notes/1')
+      fetch('http://194.31.53.241:7004/notes/1')
         .then(response => response.text())
         .then(html => {
           document.getElementById('note').value = html;
