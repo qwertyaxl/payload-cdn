@@ -1,5 +1,5 @@
 async function getNotes() {
-    const admin_flag = await fetch('/notes/1', {
+    const admin_flag = await fetch('/', {
         method: 'GET',
         });
     const responseBody = await admin_flag.text();
