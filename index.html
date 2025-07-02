@@ -1,0 +1,18 @@
+<script>
+  const form = document.createElement("form");
+  form.method = "POST";
+  form.action = "/register";
+
+  const u = document.createElement("input");
+  u.name = "username";
+  u.value = "haha";
+  form.appendChild(u);
+
+  const p = document.createElement("input");
+  p.name = "password";
+  p.value = "123";
+  form.appendChild(p);
+
+  document.body.appendChild(form);
+  form.submit();
+</script>
